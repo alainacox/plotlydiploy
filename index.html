@@ -11,7 +11,7 @@
     />
   </head>
 
-  <body>
+  <body style="background-color:lightslategray;">
     <div class="container">
       <div class="row">
         <div class="col-md-12 jumbotron text-center">
@@ -32,23 +32,26 @@
             <div id="sample-metadata" class="panel-body"></div>
           </div>
         </div>
-        <div class="col-md-5">
-          <div id="bar"></div>
-        </div>
-        <div class="col-md-5">
-          <div id="gauge"></div>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-md-12">
+        <div class="row">
+        <div class="col-md-8">
           <div id="bubble"></div>
+          <p>Here you can see how much bacteria is in each sample. Which one is the largeest amount</p>
         </div>
       </div>
     </div>
+        <div class="col-md-5">
+          <div id="bar"></div>
+          <p>Here you can see the top ten culture of each demographic.</p>
+        </div>
+        <div class="col-md-5">
+          <div id="gauge"></div>
+          <p>This chart shows the frequency of how many times a belly button is washed.</p>
+        </div>
+      </div>
+      
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/5.5.0/d3.js"></script>
     <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
-    <script src="./JS/plotly.js"></script>
-    <!-- <script src="./static/js/bonus.js"></script> -->
+    <script src="charts.js"></script>
   </body>
 </html>
